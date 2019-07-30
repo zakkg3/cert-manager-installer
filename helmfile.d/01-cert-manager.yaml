@@ -1,0 +1,12 @@
+repositories:
+  - name: jetstack
+    url: https://charts.jetstack.io
+releases:
+  - name: cert-manager
+    namespace: cert-manager
+    version: v0.8.1
+    chart: jetstack/cert-manager
+    hooks: # here we add the annotation to namespace /disable-validation=true and we do it pre install (preSync)
+      - events: ["presync"]
+        command: "kubectl"
+        args: ["label", "--overwrite", "namespace", "{{`{{.Release.Namespace}}`}}", "certmanager.k8s.io/disable-validation=true"]

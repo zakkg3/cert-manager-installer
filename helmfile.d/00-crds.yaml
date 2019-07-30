@@ -1,0 +1,5 @@
+releases:
+  - name: crd-cert-manager
+    namespace: cert-manager
+    version: v0.1.0
+    chart: ../crds-cert-manager
