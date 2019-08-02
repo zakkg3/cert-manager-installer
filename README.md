@@ -45,7 +45,9 @@ Include the following lines in  helmfile.d/01-cert-manager.yaml
 
 ## Bumping Version
 
-Script in python3 to bump the version (PR's are welcome)
+To bump the versions you can use a script (python3):
 
         pip install -r requirements.txt
         APP_VERSION=vX.XX.XX APP_RELEASE=X.XX CHART_VERSION=v0.1.XX ./versionBump.py
+
+PR's are welcome :)
