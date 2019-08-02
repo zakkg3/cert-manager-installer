@@ -2,6 +2,8 @@
 
 An alternative, automated and easy way to install cert-manager using Helmfile
 
+** Current version: 0.8.1 *** See [Bumping versions](#Bumping Version)
+
 
 ## Helmfile
 
@@ -39,3 +41,11 @@ Include the following lines in  helmfile.d/01-cert-manager.yaml
         values:
           - webhook:
               enabled: false
+
+
+## Bumping Version
+
+Script in python3 to bump the version (PR's are welcome)
+
+        pip install -r requirements.txt
+        APP_VERSION=vX.XX.XX APP_RELEASE=X.XX CHART_VERSION=v0.1.XX ./versionBump.py
