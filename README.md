@@ -2,7 +2,7 @@
 
 An alternative, automated and easy way to install cert-manager using Helmfile
 
-** Current version: 0.8.1 *** See [Bumping versions](#Bumping Version)
+ ***Current version: 0.8.1*** See [Bumping versions](#Bumping-Version)
 
 
 ## Helmfile
