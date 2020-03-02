@@ -32,7 +32,7 @@ Helmfile will process all the the helm charts defined inside `helmfile.d` direct
 
 ### Troubleshooting
 
-Please read [Troubleshooting installation](https://docs.cert-manager.io/en/latest/getting-started/troubleshooting.html)
+Please read [Official Docs](https://cert-manager.io/docs/installation/kubernetes/)
 
 #### Disable webhook
 
